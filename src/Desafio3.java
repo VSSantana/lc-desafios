@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Desafio3 {
 
@@ -55,8 +57,37 @@ public class Desafio3 {
 
                 sc.close();
 
-                input1 = Integer.parseInt(input.substring(0, 1));
-                input2 = Integer.parseInt(input.substring(2, 3));
+                Pattern pattern = Pattern.compile("\\d*");
+                Matcher matcher = pattern.matcher(input);
+                String substringMatched = new String();
+                int i = 0;
+                boolean n1 = false, n2 = false;
+
+                while (matcher.find() || i < 2) {
+
+                    substringMatched = matcher.group(0);
+
+                    if (i == 0) {
+
+                        input1 = Integer.parseInt(substringMatched);
+                        n1 = true;
+
+                    }
+
+                    if (i == 2 && !substringMatched.equals("")) {
+
+                        input2 = Integer.parseInt(substringMatched);
+                        n2 = true;
+
+                    }
+
+                    if (n1 == true)
+                        i++;
+
+                    if (n2 == true)
+                        i++;
+
+                }
 
                 if (input1 > input2) {
 

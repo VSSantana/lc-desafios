@@ -14,7 +14,11 @@ NAO USAR: Collections, Arrays, metodos utilitarios sort
 
 # Checklist do Desafio 3
 
-- Parâmetros de entrada: dois números inteiros:
-- Escrever todos os números inteiros entre o menor e o maior:
-- Somar todos os números apresentados na saída:
-- Apresentar a soma de todos os números da saída:
+- Parâmetros de entrada: dois números inteiros: OK
+- Escrever todos os números inteiros entre o menor e o maior: OK
+- Somar todos os números apresentados na saída: OK
+- Apresentar a soma de todos os números da saída: OK
+
+# To-Do
+
+- Melhorar a entrada manual de números depois da chamada do programa.

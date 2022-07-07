@@ -105,3 +105,7 @@ GBP - USD
 Saida:
 
 GBP - USD: 1.25
+
+# To-Do - Desafio 5
+
+- Melhorar a saída de dados.

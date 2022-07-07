@@ -20,14 +20,14 @@ public class Desafio5 {
         mapping.get("BRL").put("EUR", 0.18);
         mapping.get("EUR").put("GBP", 0.86);
 
-        System.out.println(converter("GBP", "USD", mapping));
+        System.out.println("Conversion from GBP to USD: " + converter("GBP", "USD", mapping));
 
     }
 
     public static Double converter(String origin, String destiny, Map<String, Map<String, Double>> mapping) {
 
         Map<String, Map<String, Double>> combinations = new HashMap<>(mapping);
-        Double conversionRate = 0.0;
+        Double conversionRate = -1.0;
 
         for (String origingCurrency : mapping.keySet()) {
 
@@ -47,8 +47,6 @@ public class Desafio5 {
 
         }
 
-        System.out.println(combinations);
-
         Queue<String> currencies = new LinkedList<>();
         currencies.add(origin);
 
@@ -62,11 +60,8 @@ public class Desafio5 {
             final String currency = currencies.poll();
             final Double ammount = ammounts.poll();
 
-            System.out.println("LOOP " + currency + ": " + ammount);
-
             if (visitedCurrencies.contains(currency)) {
 
-                System.out.println("Currency already visited.");
                 continue;
 
             }
@@ -77,7 +72,19 @@ public class Desafio5 {
 
                 final Map<String, Double> ratings = combinations.get(currency);
 
-                for
+                for (String key : ratings.keySet()) {
+
+                    currencies.add(key);
+
+                    if (key.equals(destiny)) {
+
+                        return ratings.get(key) * ammount;
+
+                    }
+
+                    ammounts.add(ratings.get(key) * ammount);
+
+                }
 
             }
 

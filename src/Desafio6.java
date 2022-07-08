@@ -1,4 +1,12 @@
-﻿public class Desafio6 {
+﻿import cliente.ClienteArrojado;
+import cliente.ClienteConservador;
+import investimento.Acao;
+import investimento.CDB;
+import investimento.FundoImobiliario;
+import investimento.Investimento;
+import investimento.Tesouro;
+
+public class Desafio6 {
 
     public static void main(String[] args) {
 

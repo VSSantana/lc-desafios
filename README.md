@@ -112,8 +112,16 @@ GBP - USD: 1.25
 
 # Enunciado do Dessafio 6
 
-O Banco Universal deseja expandir sua área de atuação para oferecer mais opções de investimentos para seus clientes. Para oferecer os produtos de investimento corretos para seus clientes, o banco categorizou os clientes de acordo com seus perfis: Conservador, Arrojado ou Moderado. Assim, por exemplo, o perfil conversador deve adicionar em carteira apenas o tipo Renda Fixa.
+O Banco Universal deseja expandir sua área de atuação para oferecer mais opções de investimentos para seus clientes. Para oferecer os produtos de investimento corretos para seus clientes, o banco categorizou os clientes de acordo com seus perfis: Conservador, Arrojado ou Moderado. Assim, por exemplo, o perfil conservador deve adicionar em carteira apenas o tipo Renda Fixa.
 
 Observe o diagrama do desafio 6.
 
 Com base no diagrama e no código disponibilizado, defina a classe abstrata Cliente e as classes-filhas ClienteConservador e ClienteArrojado de forma a fazer o código funcionar. Observe para cumprir a regra de só poder adicionar os produtos de acordo com o perfil do cliente. Caso contrário, deve ocorrer erro de compilação se tentar adicionar um tipo de investimento diferente do previsto para ao perfil do cliente.
+
+# Checklist do Desafio 6
+
+- Criar classe abstrata Cliente:
+- Criar classe filha ClienteConservador:
+- Criar classe filha ClienteArrojado:
+- Adicionar produtor de acordo com o perfil do cliente:
+- Erro de compilação ao adicionar tipo de investimento imcompatível com o perfil do cliente:

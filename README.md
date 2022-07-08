@@ -120,8 +120,67 @@ Com base no diagrama e no código disponibilizado, defina a classe abstrata Clie
 
 # Checklist do Desafio 6
 
-- Criar classe abstrata Cliente:
-- Criar classe filha ClienteConservador:
-- Criar classe filha ClienteArrojado:
-- Adicionar produtor de acordo com o perfil do cliente:
-- Erro de compilação ao adicionar tipo de investimento imcompatível com o perfil do cliente:
+- Criar classe abstrata Cliente: OK
+- Criar classe filha ClienteConservador: OK
+- Criar classe filha ClienteArrojado: OK
+- Adicionar produto de acordo com o perfil do cliente: OK
+- Erro de compilação ao adicionar tipo de investimento imcompatível com o perfil do cliente: OK
+
+# Enunciado do Dessafio 7
+
+Crie uma estrutura de classes para simular o envio de uma mensagem por e-mail, mas, antes de enviar a mensagem, disponibilizar diversos tipos de formatações. A mensagem pode ser enviada com nenhuma, uma ou mais de uma das seguintes formatações
+
+Formatar tudo em maiúsculo
+Formatar tudo em minúsculo
+Formatar em camelCase
+Remover acentuação
+
+# Checklist do Desafio 7
+
+- Criar classe Cabecalho:
+- Criar classe Texto:
+- Criar classe Envio:
+- Realizar a formatação no envio (lista com as formatações desejadas):
+
+# Enunciado do Dessafio 8
+
+Crie um programa para aplicar uma cadeia de descontos no total da compra.
+
+Os descontos são:
+
+    Se comprar 15 itens ou mais, aplicar 10% de desconto.
+    Se comprar 10 itens e menos de 15 aplicar 8% de desconto.
+    Se comprar 5 itens e menos de 10 aplicar 5% de desconto.
+    Se comprar menos que 5 itens não aplicar desconto.
+
+Ao aplicar o desconto encerre a cadeia de verificações. Deixe o código aberto para que outros tipos de descontos sejam aplicados futuramente.
+
+# Enunciado do Desafio 9
+
+A agência de turismo Brasil Adentro contratou você para desenvolver parte do seu novo site de viagens. A agência possui contrato para vender apenas alguns trechos de voo domésticos e precisa de um programa que calcule todas as rotas possíveis.
+
+O mapa a seguir mostra quais trechos podem ser comercializados pela agência.
+
+A seguinte interface foi definida como contrato para você desenvolver seu código:
+
+public interface Travel {
+boolean isReachable(String from, String to, int numberConnections);
+}
+
+Ou seja, dada uma cidade de origem, uma de destino e a quantidade de conexões, é possível realizar a viagem?
+
+Entrada:
+
+travel.isReachable("GRU", "REC", 0)
+
+Saída:
+
+true
+
+Entrada:
+
+travel.isReachable("POA", "REC", 1)
+
+Saída:
+
+false

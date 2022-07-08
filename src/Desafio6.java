@@ -15,7 +15,7 @@ public class Desafio6 {
         conservador.contratarInvestimento(new CDB());
         conservador.contratarInvestimento(new Tesouro());
 
-        conservador.contratarInvestimento(new Acao());// ERRO de compilação
+        // conservador.contratarInvestimento(new Acao());// ERRO de compilação
         for (Investimento i : conservador.getCarteiraInvestimentos()) {
             System.out.println(i);
         }
@@ -24,7 +24,7 @@ public class Desafio6 {
         arrojado.contratarInvestimento(new Acao());
         arrojado.contratarInvestimento(new FundoImobiliario());
 
-        arrojado.contratarInvestimento(new Tesouro());// ERRO de compilação
+        // arrojado.contratarInvestimento(new Tesouro());// ERRO de compilação
         for (Investimento i : arrojado.getCarteiraInvestimentos()) {
             System.out.println(i);
         }

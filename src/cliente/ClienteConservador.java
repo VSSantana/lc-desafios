@@ -1,18 +1,16 @@
 package cliente;
 
-import investimento.Acao;
-import investimento.FundoImobiliario;
+import investimento.CDB;
+import investimento.Tesouro;
 
 public class ClienteConservador extends Cliente {
 
-    @Override
-    public void contratarInvestimento(Acao investimento) {
-        super.contratarInvestimento(investimento);
+    public void contratarInvestimento(CDB investimento) {
+        super.adicionarInvestimento(investimento);
     }
 
-    @Override
-    public void contratarInvestimento(FundoImobiliario investimento) {
-        super.contratarInvestimento(investimento);
+    public void contratarInvestimento(Tesouro investimento) {
+        super.adicionarInvestimento(investimento);
     }
 
 }

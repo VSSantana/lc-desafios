@@ -1,18 +1,16 @@
 package cliente;
 
-import investimento.CDB;
-import investimento.Tesouro;
+import investimento.Acao;
+import investimento.FundoImobiliario;
 
 public class ClienteArrojado extends Cliente {
 
-    @Override
-    public void contratarInvestimento(CDB investimento) {
-        super.contratarInvestimento(investimento);
+    public void contratarInvestimento(Acao investimento) {
+        super.adicionarInvestimento(investimento);
     }
 
-    @Override
-    public void contratarInvestimento(Tesouro investimento) {
-        super.contratarInvestimento(investimento);
+    public void contratarInvestimento(FundoImobiliario investimento) {
+        super.adicionarInvestimento(investimento);
     }
 
 }

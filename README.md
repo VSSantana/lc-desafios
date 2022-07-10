@@ -155,6 +155,13 @@ Os descontos são:
 
 Ao aplicar o desconto encerre a cadeia de verificações. Deixe o código aberto para que outros tipos de descontos sejam aplicados futuramente.
 
+# Checklist do Desafio 8
+
+- Desconto no valor total da compra, segundo regra: OK
+- Aplicação de desconto encerra a cadeia de verificações: OK
+- Permitir que o código possa ser incrementado para inclusão de novos descontos: OK
+- Implementar método simples cuja chamada recebe o número de itens e o valor total: OK
+
 # Enunciado do Desafio 9
 
 A agência de turismo Brasil Adentro contratou você para desenvolver parte do seu novo site de viagens. A agência possui contrato para vender apenas alguns trechos de voo domésticos e precisa de um programa que calcule todas as rotas possíveis.

@@ -137,10 +137,10 @@ Remover acentuação
 
 # Checklist do Desafio 7
 
-- Criar classe Cabecalho:
-- Criar classe Texto:
-- Criar classe Envio:
-- Realizar a formatação no envio (lista com as formatações desejadas):
+- Criar classe Cabecalho: OK
+- Criar classe Texto: OK
+- Criar classe Envio: OK
+- Realizar a formatação no envio (lista com as formatações desejadas): OK
 
 # Enunciado do Dessafio 8
 

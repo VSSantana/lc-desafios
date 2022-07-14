@@ -4,44 +4,64 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Graph {
+public class Graph implements Travel {
 
     List<List<Integer>> adjList = new ArrayList<>();
     List<Edge> edges;
     Integer numberOfVertexes;
+    Integer numberConnections;
 
-    public Graph(List<Edge> edges, Integer vertexesNumber) {
+    public Graph(List<Edge> edges, Integer numberOfVertexes) {
 
-        for (int i = 0; i <= vertexesNumber; i++) {
+        for (int i = 0; i <= numberOfVertexes; i++) {
             adjList.add(i, new ArrayList<>());
         }
 
-        for (Edge current : edges) {
-            adjList.get(current.getSourceNodeIndex()).add(current.getDestinationNodeIndex());
+        for (Edge edge : edges) {
+            adjList.get(edge.getSourceNodeIndex()).add(edge.getDestinationNodeIndex());
         }
 
         this.edges = edges;
-        this.numberOfVertexes = vertexesNumber;
+        this.numberOfVertexes = numberOfVertexes;
 
     }
 
-    public boolean traversalDFS(int start, int end, boolean vnodelist[]) {
+    public boolean traversalDFS(int from, int to, boolean vnodelist[]) {
 
-        vnodelist[start] = true;
-        System.out.print(start + " ");
+        vnodelist[from] = true;
 
-        if (start == end)
+        if (numberConnections < 0)
+            return false;
+
+        if (from == to)
             return true;
 
-        Iterator<Integer> i = adjList.get(start).listIterator();
+        if (numberConnections >= 0) {
 
-        while (i.hasNext()) {
+            Iterator<Integer> i = adjList.get(from).listIterator();
 
-            int n = i.next();
+            while (i.hasNext()) {
 
-            if (!vnodelist[n])
-                if (traversalDFS(n, end, vnodelist))
-                    return true;
+                int n = i.next();
+
+                if (!vnodelist[n]) {
+
+                    if (traversalDFS(n, to, vnodelist)) {
+
+                        if (numberConnections-- < 0) {
+
+                            numberConnections++;
+                            return false;
+
+                        }
+
+                        return true;
+
+                    }
+
+                }
+
+            }
 
         }
 
@@ -49,11 +69,39 @@ public class Graph {
 
     }
 
-    public boolean DFS(int start, int end) {
+    public boolean isReachable(String from, String to, int numberConnections) {
 
         boolean visited[] = new boolean[numberOfVertexes];
 
-        return traversalDFS(start, end, visited);
+        this.numberConnections = numberConnections;
+
+        return traversalDFS(getVertexIndex(from), getVertexIndex(to), visited);
+
+    }
+
+    public Integer getVertexIndex(String vertexName) {
+
+        Integer vertexIndex = -1;
+
+        for (Edge edge : edges) {
+
+            if (edge.getSource().equals(vertexName)) {
+
+                return edge.getSourceNodeIndex();
+
+            } else {
+
+                if (edge.getDestination().equals(vertexName)) {
+
+                    return edge.getDestinationNodeIndex();
+
+                }
+
+            }
+
+        }
+
+        return vertexIndex;
 
     }
 
@@ -62,6 +110,8 @@ public class Graph {
         int s = 0;
 
         int n = graph.adjList.size();
+
+        System.out.println("\n############################### Printing graph ###############################\n");
 
         while (s < n) {
 

@@ -23,9 +23,15 @@ public class Desafio9 {
 
         Graph graph = new Graph(edges, 8);
 
-        Graph.showGraph(graph);
+        System.out.println(graph.isReachable("POA", "REC", 1));
 
-        System.out.println(graph.DFS(0, 0));
+        System.out.println(graph.isReachable("POA", "REC", 2));
+
+        System.out.println(graph.isReachable("BSB", "REC", 1));
+
+        System.out.println(graph.isReachable("BSB", "POA", 0));
+
+        System.out.println(graph.isReachable("GRU", "SSA", 2));
 
     }
 

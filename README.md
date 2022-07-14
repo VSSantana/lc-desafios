@@ -191,3 +191,7 @@ travel.isReachable("POA", "REC", 1)
 Saída:
 
 false
+
+# To-Do do Desafio 9
+
+- Existe uma falha de projeto que não faz com que todos os caminhos possíveis sejam averiguados. Possível solução é alterar a busca para procurar o menor caminho.

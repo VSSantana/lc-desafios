@@ -195,3 +195,15 @@ false
 # To-Do do Desafio 9
 
 - Existe uma falha de projeto que não faz com que todos os caminhos possíveis sejam averiguados. Possível solução é alterar a busca para procurar o menor caminho.
+
+# Enunciado do Desafio 11
+
+A partir de uma lista de pessoas (nome e data nascimento no formato dd-MM-yy), calcular a idade de cada pessoa em referência a data de hoje.
+
+A idade maxima das pessoas é de 99 anos.
+
+# Checklist do Desafio 11
+
+- Criar uma lista de pessoas com nome e data de nascimento no formato (dd-MM-yy): OK
+- Calcular a idade de cada pessoa em referencia a data de hoje:
+- Caso a idade seja maior que 99 anos é mostrado 99+:

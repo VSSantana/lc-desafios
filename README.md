@@ -207,3 +207,20 @@ A idade maxima das pessoas é de 99 anos.
 - Criar uma lista de pessoas com nome e data de nascimento no formato (dd-MM-yy): OK
 - Calcular a idade de cada pessoa em referencia a data de hoje: OK
 - Caso a idade seja maior que 99 anos é considerado que a pessoa está no século atual: OK
+
+# Enunciado do Desafio 12
+
+Um funcionário recebe uma comissão de 0.5% sobre o valor do seu dia trabalhado.
+
+Criar uma função para receber o valor do salário mensal e o ano e partir dessas informações calcular a previsão do salário mês a mês.
+
+Considerar apenas os dias úteis (segunda a sexta).
+
+- A diária muda de acordo com o número de dias úteis no mês.
+
+# Checklist do Desafio 12
+
+- Função que recebe o valor mensal do salário e o ano e retorna o salário de cada mês:
+- Descobrir os dias úteis em um mês:
+- A função considera apenas os dias úteis: OK
+- O valor da diária considera os dias úteis: OK

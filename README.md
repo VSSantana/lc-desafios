@@ -205,5 +205,5 @@ A idade maxima das pessoas é de 99 anos.
 # Checklist do Desafio 11
 
 - Criar uma lista de pessoas com nome e data de nascimento no formato (dd-MM-yy): OK
-- Calcular a idade de cada pessoa em referencia a data de hoje:
-- Caso a idade seja maior que 99 anos é mostrado 99+:
+- Calcular a idade de cada pessoa em referencia a data de hoje: OK
+- Caso a idade seja maior que 99 anos é considerado que a pessoa está no século atual: OK

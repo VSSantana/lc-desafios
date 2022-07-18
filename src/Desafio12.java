@@ -21,8 +21,6 @@ public class Desafio12 {
         Integer ultimoDiaMes, numeroDiasUteis, mes;
         Double comissoes, diaria;
 
-        System.out.println(primeiroDiaDoAno.getDayOfWeek().getValue());
-
         mes = 1;
 
         while (mes < 13) {

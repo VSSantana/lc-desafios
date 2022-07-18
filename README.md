@@ -220,7 +220,28 @@ Considerar apenas os dias úteis (segunda a sexta).
 
 # Checklist do Desafio 12
 
-- Função que recebe o valor mensal do salário e o ano e retorna o salário de cada mês:
-- Descobrir os dias úteis em um mês:
+- Função que recebe o valor mensal do salário e o ano e retorna o salário de cada mês: OK
+- Descobrir os dias úteis em um mês: OK
 - A função considera apenas os dias úteis: OK
 - O valor da diária considera os dias úteis: OK
+
+# Enunciado do Desafio 13
+
+Vai acontecer um evento internacional com transmissão online em São Paulo e Paris.
+
+Começa no dia 20 de Julho às 10h de São Paulo, mas deverá ter uma nova sessão a cada 10 dias.
+
+A cada sessão a hora de início deve avançar 2 horas, comparado com a sessão anterior.
+
+Cada sessão vai durar 6h.
+
+O evento termina no fim de Outubro.
+
+Crie a agenda do evento programaticamente utilizando o Java Time, deverá fornecer:
+
+- A agenda das sessões para cada lugar.
+- Com o número da sessão.
+- Apresentar a data de cada sessão.
+- O horário de início e de fim, para cada lugar respectivamente.
+- Apresentar o dia da semana em português.
+- Organizar o código em classes e adotar algum padrão de projeto.

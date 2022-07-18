@@ -1,4 +1,4 @@
-﻿public class Desafio8 {
+public class Desafio8 {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-﻿import cliente.ClienteArrojado;
+import cliente.ClienteArrojado;
 import cliente.ClienteConservador;
 import investimento.Acao;
 import investimento.CDB;

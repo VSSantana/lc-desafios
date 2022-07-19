@@ -1,4 +1,4 @@
-﻿import java.text.NumberFormat;
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -20,8 +20,6 @@ public class Desafio12 {
         LocalDate diaIteracao = primeiroDiaDoAno;
         Integer ultimoDiaMes, numeroDiasUteis, mes;
         Double comissoes, diaria;
-
-        System.out.println(primeiroDiaDoAno.getDayOfWeek().getValue());
 
         mes = 1;
 

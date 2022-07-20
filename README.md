@@ -237,11 +237,12 @@ Cada sessão vai durar 6h.
 
 O evento termina no fim de Outubro.
 
-Crie a agenda do evento programaticamente utilizando o Java Time, deverá fornecer:
+# Checklist Desafio 13
 
-- A agenda das sessões para cada lugar.
-- Com o número da sessão.
-- Apresentar a data de cada sessão.
-- O horário de início e de fim, para cada lugar respectivamente.
-- Apresentar o dia da semana em português.
-- Organizar o código em classes e adotar algum padrão de projeto.
+- Crie a agenda do evento programaticamente utilizando o Java Time: OK
+- A agenda das sessões para cada lugar: OK
+- Com o número da sessão: OK
+- Apresentar a data de cada sessão: OK
+- O horário de início e de fim, para cada lugar respectivamente: OK
+- Apresentar o dia da semana em português: OK
+- Organizar o código em classes e adotar algum padrão de projeto (ESSE DEVERIA TER SIDO O PRIMEIRO REQUISITO!): OK (BODY BUILDER)

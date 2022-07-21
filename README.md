@@ -255,10 +255,16 @@ Tem 100 vermelhos, 50 amarelos e 25 azuis, todos bem misturadas, produzindo um e
 
 Assuma que o lírio vermelho é o número 1, o amarelo o número 2 e o azul será o número 3.
 
-Inicialize um stream com as sequências onde cada número representa uma flor e misture tudo.
+# Checklist Desafio 14
 
-Faça a colheita de todas as flores azuis e de 25% das outras flores.
+- Inicialize um stream com as sequências onde cada número representa uma flor: OK
 
-Apresente o total de flores que sobram no jardim.
+- Misture tudo (flores): OK
 
-Utilize apenas stream, é proibido utilizar arrays e collections.
+- Faça a colheita de todas as flores azuis: OK
+
+- Faça a colheita de 25% das outras flores:
+
+- Apresente o total de flores que sobram no jardim.
+
+- Utilize apenas stream, é proibido utilizar arrays e collections: OK

@@ -246,3 +246,19 @@ O evento termina no fim de Outubro.
 - O horário de início e de fim, para cada lugar respectivamente: OK
 - Apresentar o dia da semana em português: OK
 - Organizar o código em classes e adotar algum padrão de projeto (ESSE DEVERIA TER SIDO O PRIMEIRO REQUISITO!): OK (BODY BUILDER)
+
+# Enunciado do Desafio 14
+
+Há um jardim cheio de lírios.
+
+Tem 100 vermelhos, 50 amarelos e 25 azuis, todos bem misturadas, produzindo um efeito bem colorido.
+
+Assuma que o lírio vermelho é o número 1, o amarelo o número 2 e o azul será o número 3.
+
+Inicialize um stream com as sequências onde cada número representa uma flor e misture tudo.
+
+Faça a colheita de todas as flores azuis e de 25% das outras flores.
+
+Apresente o total de flores que sobram no jardim.
+
+Utilize apenas stream, é proibido utilizar arrays e collections.

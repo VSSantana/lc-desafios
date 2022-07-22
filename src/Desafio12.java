@@ -45,7 +45,7 @@ public class Desafio12 {
 
                     mes++;
 
-                    diaria = (salarioBase / ultimoDiaMes);
+                    diaria = (salarioBase / 30);
 
                 }
 
@@ -53,7 +53,7 @@ public class Desafio12 {
 
             }
 
-            comissoes = (diaria * 0.5) * numeroDiasUteis;
+            comissoes = (diaria * 0.005) * numeroDiasUteis;
 
             System.out.print(
                     numeroDiasUteis + "\t| Salário base: " + formatacaoMonetaria(salarioBase, local) + "\t| Diária: "

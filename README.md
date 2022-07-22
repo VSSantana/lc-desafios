@@ -268,3 +268,23 @@ Assuma que o lírio vermelho é o número 1, o amarelo o número 2 e o azul ser�
 - Apresente o total de flores que sobram no jardim: OK
 
 - Utilize apenas stream, é proibido utilizar arrays e collections: OK
+
+# Enunciado do Desafio 15
+
+Baseado na lista de contatos abaixo, obtenha os nomes de quem possuí o número 7 no seu número de telefone e liste os respectivos nomes em ordem alfabéntica.
+
+Apensa utilizando Stream.
+
+List.of(
+Map.of("nome", "João", "telefone", "9329823423"),
+Map.of("nome", "Maria", "telefone", "9124235435"),
+Map.of("nome", "Marta", "telefone", "9456335387"),
+Map.of("nome", "José", "telefone", "9632874738"),
+Map.of("nome", "Judas", "telefone", "9329244683")
+)
+
+# Checklist do Desafio 15
+
+- Obter nome de quem tem 7 no número de telefone:
+- Listar os nomes obtidos em ordem alfabética:
+- Só utilizar streams:

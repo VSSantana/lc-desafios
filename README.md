@@ -263,8 +263,8 @@ Assuma que o lírio vermelho é o número 1, o amarelo o número 2 e o azul ser�
 
 - Faça a colheita de todas as flores azuis: OK
 
-- Faça a colheita de 25% das outras flores:
+- Faça a colheita de 25% das outras flores: OK
 
-- Apresente o total de flores que sobram no jardim.
+- Apresente o total de flores que sobram no jardim: OK
 
 - Utilize apenas stream, é proibido utilizar arrays e collections: OK

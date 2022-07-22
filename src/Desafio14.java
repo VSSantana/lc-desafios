@@ -17,9 +17,11 @@ public class Desafio14 {
         System.out.println("\n ################### Lily's Garden After Harvest ################### \n");
 
         kinderGarten = kinderGarten.sorted((a, b) -> (int) Math.signum(Math.random() - 0.5)).filter(e -> e != 3)
-                .limit(113);
+                .limit((long) ((numberOfRedLilys + numberOfYellowLilys) * 0.75));
 
-        kinderGarten.forEach(e -> System.out.print(e + " (" + i.incrementAndGet() + ") "));
+        kinderGarten.forEach(e -> i.incrementAndGet());
+
+        System.out.println("\nTotal de lírios restantes no jardin: " + i.get());
 
     }
 

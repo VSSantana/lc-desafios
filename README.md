@@ -273,7 +273,7 @@ Assuma que o lírio vermelho é o número 1, o amarelo o número 2 e o azul ser�
 
 Baseado na lista de contatos abaixo, obtenha os nomes de quem possuí o número 7 no seu número de telefone e liste os respectivos nomes em ordem alfabéntica.
 
-Apensa utilizando Stream.
+Apenasa utilizando Stream.
 
 List.of(
 Map.of("nome", "João", "telefone", "9329823423"),
@@ -285,6 +285,43 @@ Map.of("nome", "Judas", "telefone", "9329244683")
 
 # Checklist do Desafio 15
 
-- Obter nome de quem tem 7 no número de telefone:
-- Listar os nomes obtidos em ordem alfabética:
-- Só utilizar streams:
+- Obter nome de quem tem 7 no número de telefone: OK
+- Listar os nomes obtidos em ordem alfabética: OK
+- Só utilizar streams: OK
+
+# Enunciado do Desafio 16
+
+Uma produção agrícola precisa gerar relatórios periodicamente.
+
+Deram apenas um exemplo de como pode ser gerado um dos seus relatórios mensais.
+
+Assim os outros relatórios podem ser gerados a partir da mesma implementação deste.
+
+A forma da construção dos relatórios precisa ser dinâmica, onde deve-se relacionar a informação em um arquivo de variáveis com um arquivo de modelo.
+
+Processe o arquivo de exemplo variaveis.txt e gere um arquivo a partir do arquivo modelo.txt.
+
+O relatório final produzido dinamicamente deverá ser assim:
+
+Relatório Mensal julho/2022
+
+Neste mês de julho do ano 2022 a produção acumulada até o momento é de:
+
+- 200 toneladas de TOMATES
+- 80 toneladas de MELÃO
+- 140 toneladas de LARANJA
+
+A taxa média de desperdício foi de 5%.
+
+Grave o relatório final no arquivo relatorio-<%mes%>.txt e imprima o seu conteúdo no terminal.
+
+# CHecklist do Desafio 16
+
+- Geração do nome do arquivo dinâmicamente e automaticamente (relatorio-<%mes%>.txt): OK
+- Armazenar as variáveis do arquivo de configuração na memória: OK
+- Identificar os tokens de substituição ao fazer o parse no modelo: NOT OK
+- Substituir os tokens pelas variáveis no arquivo de saída: OK
+
+# To-Do do Desafio 16
+
+- Refatorar do zero o processamento do modelo. Como não nos foi dado tempo, fiz apenas o necessário pra me sentir bem.

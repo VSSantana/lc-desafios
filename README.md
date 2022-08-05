@@ -315,7 +315,7 @@ A taxa média de desperdício foi de 5%.
 
 Grave o relatório final no arquivo relatorio-<%mes%>.txt e imprima o seu conteúdo no terminal.
 
-# CHecklist do Desafio 16
+# Checklist do Desafio 16
 
 - Geração do nome do arquivo dinâmicamente e automaticamente (relatorio-<%mes%>.txt): OK
 - Armazenar as variáveis do arquivo de configuração na memória: OK
@@ -325,3 +325,11 @@ Grave o relatório final no arquivo relatorio-<%mes%>.txt e imprima o seu conte�
 # To-Do do Desafio 16
 
 - Refatorar do zero o processamento do modelo. Como não nos foi dado tempo, fiz apenas o necessário pra me sentir bem.
+
+# Enunciado do Desafio 17
+
+Um site de noticias possui um padrao para os links, sendo ele: site, categoria, subcategoria, data e titulo da noticia.
+
+https://sitenoticas.com.br/negocios/investimentos/2022/04/01/fim-de-semana-com-muita-chuva.html
+
+Crie uma expressao regular para validar se um link inserido é correto.

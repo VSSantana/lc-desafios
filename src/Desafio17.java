@@ -24,7 +24,7 @@ public class Desafio17 {
     public static Boolean linkCheck(String link) {
 
         Pattern linkPattern = Pattern.compile(
-                "^(http)[s]?(:\\/\\/)[a-zA-Z0-9]+(.com.br\\/)[a-zA-Z]+(\\/)[a-zA-Z]+(\\/)[0-9]{4}(\\/)[0-9]{2}(\\/)[0-9]{2}(\\/)[a-zA-Z\\-]+(.html)$");
+                "^(http)[s]?(:\\/\\/sitenoticas.com.br\\/)[a-z]+(\\/)[a-z]+(\\/)[0-9]{4}(\\/)[0-9]{2}(\\/)[0-9]{2}(\\/)[a-z\\-]+(.html)$");
         Boolean validLink = false;
 
         if (Pattern.matches(linkPattern.pattern(), link)) {

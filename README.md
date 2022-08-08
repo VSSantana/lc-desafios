@@ -341,3 +341,26 @@ A partir de um arquivo TXT posicional com o seguinte conteudo:
 https://s3-sa-east-1.amazonaws.com/lcpi/67fdd982-9281-4bb3-bf89-f7c4b157b8f8.txt
 
 Faça a leitura do arquivo (utilizando a api NIO 2) e faça a transformaçao para uma lista de objetos Pessoa (utilizando stream).
+
+# Enunciado do desafio 19
+
+Crie threads para simular o processamento de um pedido.
+
+Apos receber o pedido, o sistema deve executar os seguintes passos:
+
+Processar o pagamento
+Verificar e bloquear o estoque
+Emitir nota fiscal
+Enviar email para o cliente com a nota fiscal
+Preparar o produto para expediçao
+Avisar a transportadora
+** OBRIGATORIAMENTE DEVE SER CRIADA UMA THREAD PARA CADA PASSO DA LISTA **
+
+Utilize processamento paralelo, mas algumas regras deve ser seguidas, por exemplo:
+
+O bloqueio do estoque nao pode ocorrer antes do pagamento.
+Envio de email da NF nao pode ser executado antes da emissao.
+Avisar a transportadora nao pode ocorrer antes de preparar o produto para expediçao.
+Nota fiscal deve ser emitida logo apos a verificacao do estoque.
+Preparar o produto para expediçao e avisar a transportadora deve ser iniciado logo apos o bloqueio no estoque.
+** UTILIZAR APENAS WAIT E NOTIFY PARA GARANTIR O SINCRONISMO **

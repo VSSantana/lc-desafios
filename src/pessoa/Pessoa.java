@@ -48,4 +48,10 @@ public class Pessoa {
         this.uf = uf;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa [cidade=" + cidade + ", dataNascimento=" + dataNascimento + ", nome=" + nome + ", uf=" + uf
+                + "]";
+    }
+
 }

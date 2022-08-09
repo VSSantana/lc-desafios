@@ -30,6 +30,8 @@ public class Desafio18Resp {
                 })
                 .collect(Collectors.toList());
 
+        System.out.println(pessoas);
+
     }
 
     class Pessoa {

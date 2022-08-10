@@ -162,6 +162,16 @@ Ao aplicar o desconto encerre a cadeia de verificações. Deixe o código aberto
 - Permitir que o código possa ser incrementado para inclusão de novos descontos: OK
 - Implementar método simples cuja chamada recebe o número de itens e o valor total: OK
 
+# Enunciado do Desafio 10
+
+Existem N servidores numerados de 0 a N-1 conectados por conexões ponto-a-ponto formando uma rede, onde connections[i] = [ai, bi] representa uma conexão entre os servidores ai e bi. Qualquer servidor pode alcançar outros servidores diretamente ou indiretamente através da rede.
+
+Um caminho crítico é uma conexão onde, se removida, fará que alguns servidores se tornem incomunicáveis com alguns outros servidores.
+
+Informe todos os caminhos críticos na rede em qualquer ordem.
+
+Veja o diagrama do desafio para melhor entender o problema.
+
 # Enunciado do Desafio 9
 
 A agência de turismo Brasil Adentro contratou você para desenvolver parte do seu novo site de viagens. A agência possui contrato para vender apenas alguns trechos de voo domésticos e precisa de um programa que calcule todas as rotas possíveis.

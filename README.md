@@ -358,9 +358,10 @@ Avisar a transportadora
 
 Utilize processamento paralelo, mas algumas regras deve ser seguidas, por exemplo:
 
-O bloqueio do estoque nao pode ocorrer antes do pagamento.
-Envio de email da NF nao pode ser executado antes da emissao.
-Avisar a transportadora nao pode ocorrer antes de preparar o produto para expediçao.
-Nota fiscal deve ser emitida logo apos a verificacao do estoque.
-Preparar o produto para expediçao e avisar a transportadora deve ser iniciado logo apos o bloqueio no estoque.
+O bloqueio do estoque nao pode ocorrer antes do pagamento. OK
+Envio de email da NF nao pode ser executado antes da emissao. OK
+Avisar a transportadora nao pode ocorrer antes de preparar o produto para expediçao. OK
+Nota fiscal deve ser emitida logo apos a verificacao do estoque. OK
+Preparar o produto para expediçao e avisar a transportadora deve ser iniciado logo apos o bloqueio no estoque. OK
+
 ** UTILIZAR APENAS WAIT E NOTIFY PARA GARANTIR O SINCRONISMO **

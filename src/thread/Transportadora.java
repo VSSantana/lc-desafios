@@ -2,10 +2,15 @@ package thread;
 
 public class Transportadora implements Runnable {
 
+    private Pedido pedido;
+
+    public Transportadora(Pedido pedido) {
+        this.pedido = pedido;
+    }
+
     @Override
     public void run() {
-        // TODO Auto-generated method stub
-
+        pedido.notificarTransportadora();
     }
 
 }

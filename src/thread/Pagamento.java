@@ -10,9 +10,7 @@ public class Pagamento implements Runnable {
 
     @Override
     public void run() {
-
         pedido.processarPagamento();
-
     }
 
 }

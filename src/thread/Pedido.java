@@ -86,18 +86,50 @@ public class Pedido {
         return pedidoExpedido;
     }
 
-    public void processarPagamento() {
-
-        System.out.println("O pagamento no valor de " + valor + "foi efetuado.");
+    public synchronized void processarPagamento() {
+        System.out.println("O pagamento no valor de " + valor + " foi efetuado.");
         this.pagamentoProcessado = true;
-
+        this.notifyAll();
     }
 
-    public void atualizaEstoque() {
+    public synchronized void atualizaEstoque() {
+
+        while (!pagamentoProcessado) {
+            System.out.println("Atualização do estoque aguardando processamento do pagamento.");
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.println("Estoque atualizado!");
+        this.estoqueAtualizado = true;
+        this.notifyAll();
+    }
+
+    public synchronized void emitirNotaFiscal() {
+
+        while (!estoqueAtualizado) {
+            System.out.println("Emissão da nota fiscal aguardando atualização do estoque.");
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.println("Nota fiscal emitida!");
+        this.notafiscalEmitida = true;
+        this.notifyAll();
+    }
+
+    public void notificarCliente() {
 
         synchronized (this) {
 
-            while (!pagamentoProcessado) {
+            while (!notafiscalEmitida) {
+                System.out.println("Envio do email aguardando emissão da nota fiscal.");
                 try {
                     this.wait();
                 } catch (InterruptedException e) {
@@ -107,33 +139,41 @@ public class Pedido {
 
         }
 
-        System.out.println("Estoque atualizado!");
-        this.estoqueAtualizado = true;
-
-    }
-
-    public void emitirNotaFiscal() {
-
-        System.out.println("Nota fiscal emitida!");
-        this.notafiscalEmitida = true;
-
-    }
-
-    public void notificarCliente() {
-
-        System.out.println("Email enviado!");
+        System.out.println("Email enviado para o cliente!");
         this.emailEnviado = true;
 
     }
 
-    public void expedirProduto() {
+    public synchronized void expedirProduto() {
+
+        while (!estoqueAtualizado) {
+            System.out.println("Aguardando atualização do estoque para expedir o produto.");
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
         System.out.println("Produto expedido!");
         this.pedidoExpedido = true;
-
+        this.notifyAll();
     }
 
     public void notificarTransportadora() {
+
+        synchronized (this) {
+
+            while (!pedidoExpedido) {
+                System.out.println("Aguardando confirmação de expedição para notificar a transportadora.");
+                try {
+                    this.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
 
         System.out.println("Transportadora notificada!");
         this.transportadoraNotificada = true;

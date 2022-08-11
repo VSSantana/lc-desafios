@@ -375,3 +375,13 @@ Nota fiscal deve ser emitida logo apos a verificacao do estoque. OK
 Preparar o produto para expediçao e avisar a transportadora deve ser iniciado logo apos o bloqueio no estoque. OK
 
 ** UTILIZAR APENAS WAIT E NOTIFY PARA GARANTIR O SINCRONISMO **
+
+# Enunciado do Desafio 20
+
+Um sistema precisa realizar a exportação de dados a partir de consultas em diversos sistemas.
+
+Simule a criação de 4 consultas a sistemas diversos e a criação de um arquivo contendo os dados de todas as consultas.
+
+As 4 consultas devem ser realizadas paralelamente e após a finalização das consultas um arquivo único deve ser gerado com os dados.
+
+Utilizar a classe ExecutorService para realizar a sincronização do processamento.
